@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## This function takes an invertible matrix as its argument and returns
+## makeCacheMatrix function takes an invertible matrix as its argument and returns
 ##a list of functions to get the matrix, set the matrix, get the inverse of 
 ##the matrix, and set the inverse of the matrix. 
 ##get() function returns the matrix we have provided to the function 
@@ -10,7 +10,6 @@
 ##defined in the parent environment of it so that its value is redefined.
 ##setInverseMatrix() function takes the inverse of a matrix and assigns it
 ##to the variable i which is defined in its parent environment.
-
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -26,7 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
 	   getInverseMatrix=getInverseMatrix)
 }
 
-##This function takes as its argument a list of functions returned by 
+
+##cacheSolve function takes as its argument a list of functions returned by 
 ##makeCacheMatrix function  and returns the inverse of the matrix which 
 ##has been provided to makeCacheMatrix function. 
 ##It first calls the getInverseMatrix function of the list x and checks
